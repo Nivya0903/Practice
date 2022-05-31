@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+ p{
+    font-size: 0.9em;
+    color: hsl(215, 23%, 53%);
+ }
+
+ h3{
+    color: white;
+    font-weight: bolder;
+    
+ }
+img:nth-child(1){
+    width: 275px;
+    border-radius: 15px;
+}
+
+ .container {
+    background-color: hsl(216, 50%, 16%);
+    width: 315px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+} 
+
+.box{
+    padding: 25px 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    
+}
+
+.row img:nth-child(1){
+    width: 9px;
+    margin-right: 5px;
+}
+
+.row p:nth-child(2){
+    color: hsl(178, 100%, 50%);
+    font-size: 0.8em;
+}
+
+.row p:nth-child(4){
+    font-size: 0.8em;
+}
+
+.row img:nth-child(3){
+    width: 13px;
+    margin-right: 5px;
+    margin-left: auto;
+   
+
+}
+
+hr{
+    border: none;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+}
+
+.row2{
+    display: flex;
+    font-size: 0.9em;   
+    font-weight: bolder;
+}
+
+.row2 img{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    margin-right: 15px;
+}
+
+.row2 span{
+    color: white;
+}
+
+.row2 p{
+    margin-top: 2%;
+}
+
+.img-box{
+    position: relative;
+}
+
+.img-box .overlap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    height: 275px;
+    width: 275px;
+    border-radius: 15px;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.img-box .overlap img{
+    width: 35px;
+
+}
+
+.img-box:hover .overlap{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.select:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media (max-width: 375px){
+    transform: translateY(0);
+}
+
+
